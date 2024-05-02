@@ -1,0 +1,114 @@
+/* variables */
+:root {
+  --divHeight: 800px;
+  --divWidth: 950px;
+}
+
+/* properties for the body section of the page */
+body {
+  background-color: lightgray;
+}
+
+/* main div */
+.dvMain {
+  width: var(--divWidth);
+  height: var(--divHeight);
+  background-color: white;
+  margin: 5px auto;
+  padding: 30px;
+  display: flex;
+}
+
+/* menu section */
+.dvMenu {
+  width: 250px;
+  height: calc(var(--divHeight) - 20px);
+  padding: 10px;
+}
+
+/* list items (page links) */
+.majorproducts {
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* page section */
+.dvMainPage {
+  display: flex;
+  flex-wrap: wrap;
+  --MainSectionWidth: calc(var(--divWidth) - 150px);
+  width: calc(var(--divWidth) - 150px);
+  height: var(--divHeight);
+  justify-content: center;
+  align-items: center;
+}
+/* image inside the main page div */
+.dvHeadImg {
+  width: var(--MainSectionWidth);
+  height: 100px;
+  padding: 0 200px 0 250px;
+}
+
+/* chat logo image */
+.dvImage {
+  height: 100px;
+}
+
+/* search section (based on your wireframe) */
+
+/* search box */
+.dvSearch input {
+  width: 350px;
+  border-radius: 5px;
+}
+
+/* info section */
+
+/* Product Gallery section */
+.dvProductGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(var(--divHeight) - 260px);
+  width: var(--MainSectionWidth);
+}
+
+/* product thumbnails */
+.dvProductThumb {
+  width: 175px;
+  height: 175px;
+  border: 1px solid black;
+  margin: 40px;
+}
+
+.dvProductThumb:hover {
+  border: 2px solid rgb(144, 221, 254);
+  height: 176px;
+  width: 176px;
+}
+
+.divextraspace {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  flex-wrap: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.minorproducts {
+  font-size: 16px;
+  color: rgb(135, 131, 131);
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dvProductThumb img {
+  height: 100%;
+  width: 100%;
+}
